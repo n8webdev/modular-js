@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="app.css">
+  <title>Modular JS</title>
+</head>
+<body>
+
+  <!-- stats module
+  <div class="hero-unit" id="statsModule"></div>
+  <script id="stats-template" type="text/template">
+      <h2>Stats</h2>
+      <strong>people: {{people}}</strong>
+  </script>
+
+  people adder
+  <div id="peopleModule">
+    <h1>People</h1>
+    <input placeholder="name" type="text">
+    <button id="addPerson">Add Person</button>
+    <ul id="people">
+        <script id="people-template" type="text/template">
+            {{#peopleTemplate}}
+                <li>
+                    <span>{{.}}</span>
+                    <i class="del">X</i>
+                </li>
+            {{/peopleTemplate}}
+        </script>
+    </ul>
+  </div> -->
+
+  <div class="hero-unit" id="statsModule"></div>
+  <script id="stats-template" type="text/template">
+      <h2>Stats</h2>
+      <strong>people: {{people}}</strong>
+  </script>
+
+  <div id="peopleModule">
+      <h1>People</h1>
+      <input placeholder="name" type="text">
+      <button id="addPerson">Add Person</button>
+      <ul id="people">
+          <script id="people-template" type="text/template">
+              {{#people}}
+                  <li>
+                      <span>{{.}}</span>
+                      <i class="del">X</i>
+                  </li>
+              {{/people}}
+          </script>
+      </ul>
+  </div>
+  
+  <!-- loads jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+    crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>  
+  <script src="pubsub.js"></script>
+  <script src="stats.js"></script>  
+  <script src="people.js"></script>
+</body>
+</html>
+

@@ -1,6 +1,6 @@
 var people = (function(){
   "use strict";
-  
+  console.log(this);
   // properties 
   var people = ['Nathan', 'Lari'],
     $module  = $("#peopleModule"),
