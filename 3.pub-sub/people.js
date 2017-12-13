@@ -1,5 +1,6 @@
 var people = (function(){
-    var people = ['Will', 'Steve'];
+    
+    var people = ['Nathan', 'Larissa'];
 
     //cache DOM
     var $el = $('#peopleModule');
@@ -37,6 +38,5 @@ var people = (function(){
         people.splice(i, 1);
         _render();
     }
-
 
 })();
