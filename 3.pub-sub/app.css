@@ -90,3 +90,39 @@ button.active {
 #peopleModule li i:hover {
   opacity: 1;
 }
+
+#box {
+  height: 2000px;
+}
+
+#menu {
+  width: 80%;
+  height: 60px;
+  background: #000;
+  margin: 0 auto;
+  text-align: center;
+  transition: all .2s linear;
+}
+
+#menu.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000;
+}
+
+#menu li {
+  padding: 0 20px;
+  display: inline-block;
+  color: #FFF;
+  font-size: 24px;
+  line-height: 60px;
+  transition: all .2s linear;
+  cursor: pointer;
+}
+
+#menu li:hover {
+  background: #fff;
+  color: #000;
+}
