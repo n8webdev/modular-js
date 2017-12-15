@@ -95,21 +95,13 @@ button.active {
   height: 2000px;
 }
 
-#menu {
+#menu, #menu.initial {
   width: 80%;
   height: 60px;
   background: #000;
   margin: 0 auto;
   text-align: center;
   transition: all .2s linear;
-}
-
-#menu.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2000;
 }
 
 #menu li {
@@ -125,4 +117,12 @@ button.active {
 #menu li:hover {
   background: #fff;
   color: #000;
+}
+
+#menu.flipInX {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000;
 }
